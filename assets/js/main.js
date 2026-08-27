@@ -3,6 +3,29 @@
 
   var nav = document.getElementById("nav");
   var toggle = document.getElementById("navToggle");
+  var themeToggle = document.getElementById("themeToggle");
+
+  function applyTheme(theme) {
+    document.documentElement.setAttribute("data-theme", theme);
+    themeToggle.setAttribute("aria-pressed", theme === "light" ? "true" : "false");
+    themeToggle.setAttribute(
+      "aria-label",
+      theme === "light" ? "Cambiar a modo oscuro" : "Cambiar a modo claro"
+    );
+  }
+
+  applyTheme(document.documentElement.getAttribute("data-theme") === "light" ? "light" : "dark");
+
+  themeToggle.addEventListener("click", function () {
+    var next =
+      document.documentElement.getAttribute("data-theme") === "light" ? "dark" : "light";
+    applyTheme(next);
+    try {
+      localStorage.setItem("theme", next);
+    } catch (error) {
+      /* almacenamiento no disponible */
+    }
+  });
 
   function closeNav() {
     nav.classList.remove("is-open");
