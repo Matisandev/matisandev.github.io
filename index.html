@@ -1,711 +1,806 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Matías Sandoval — Ingeniero en Informática | Cloud · Data · Automatización</title>
+  <meta name="description"
+    content="Currículum y portfolio de Matías Sandoval, Ingeniero en Informática en Santiago de Chile. Huawei Cloud, ingeniería de datos, PostgreSQL, AuraQuantic (BPM), Power BI y coordinación técnica.">
+  <meta name="author" content="Matías Sandoval">
+  <meta name="theme-color" content="#04070c">
+  <link rel="canonical" href="https://matisandev.github.io/">
 
-  <title>Matías Sandoval - Inicio</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <meta property="og:type" content="profile">
+  <meta property="og:locale" content="es_CL">
+  <meta property="og:site_name" content="Matías Sandoval">
+  <meta property="og:title" content="Matías Sandoval — Ingeniero en Informática">
+  <meta property="og:description"
+    content="Cloud · Data · Software · Automatización. Huawei Cloud, PostgreSQL, ETL, AuraQuantic y Power BI.">
+  <meta property="og:url" content="https://matisandev.github.io/">
+  <meta property="og:image" content="https://matisandev.github.io/assets/img/profile-img.jpg">
+  <meta name="twitter:card" content="summary">
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon2.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link rel="icon" href="assets/img/favicon2.png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Matías Sandoval",
+      "jobTitle": "Ingeniero en Informática",
+      "url": "https://matisandev.github.io/",
+      "email": "mailto:matiasandovalv@gmail.com",
+      "address": { "@type": "PostalAddress", "addressLocality": "Santiago", "addressCountry": "CL" },
+      "worksFor": { "@type": "Organization", "name": "SPS Group" },
+      "alumniOf": { "@type": "CollegeOrUniversity", "name": "Instituto Profesional Duoc UC" },
+      "sameAs": [
+        "https://www.linkedin.com/in/matisandev",
+        "https://github.com/Matisandev"
+      ],
+      "knowsAbout": ["Huawei Cloud", "Ingeniería de datos", "PostgreSQL", "ETL", "AuraQuantic", "BPM", "Power BI"]
+    }
+  </script>
 </head>
 
 <body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
 
-  <!-- ======= Mobile nav toggle button ======= -->
-  <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
-  <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
-  <!-- ======= Header ======= -->
-  <header id="header" class="d-flex flex-column justify-content-center">
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="#inicio">
+        <span class="brand__mark" aria-hidden="true">MS</span>
+        <span>Matías Sandoval</span>
+      </a>
 
-    <nav id="navbar" class="navbar nav-menu">
-      <ul>
-        <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Inicio</span></a></li>
-        <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Acerca de mí</span></a></li>
-        <li><a href="#skills" class="nav-link scrollto"><i class="bx bx-code-alt"></i> <span>Conocimientos</span></a></li>
-        <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resumen</span></a></li>
-        <li><a href="#testimonials" class="nav-link scrollto"><i class="bx bx-star"></i> <span>Referencias</span></a></li>
-       <!-- <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portafolio</span></a></li>-->
-        <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contacto</span></a></li>
-      </ul>
-    </nav><!-- .nav-menu -->
+      <button class="nav__toggle" type="button" id="navToggle" aria-expanded="false" aria-controls="nav"
+        aria-label="Abrir menú de navegación">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" aria-hidden="true">
+          <path d="M3 6h18M3 12h18M3 18h18" />
+        </svg>
+      </button>
 
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center">
-    <div class="container" data-aos="zoom-in" data-aos-delay="100">
-      <h1>Matías Sandoval</h1>
-      <p>Soy <span class="typed" data-typed-items="Desarollador, Diseñador, Freelancer"></span></p>
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/matisandev" class="linkedin" target="_blank"><i class="bx bxl-linkedin"></i></a>
-        <a href="https://github.com/MatiSanDev" class="linkedin" target="_blank"><i class="bi bi-github"></i></a>
-      </div>
+      <nav class="nav" id="nav" aria-label="Navegación principal">
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#stack">Stack</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#formacion">Formación</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
     </div>
-  </section><!-- End Hero -->
+  </header>
 
   <main id="main">
 
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container" data-aos="fade-up">
+    <!-- ======= Hero ======= -->
+    <section class="hero" id="inicio">
+      <div class="container hero__grid">
+        <div>
+          <p class="hero__status">Santiago, Chile · Cloud &amp; Data</p>
+          <h1>Matías Sandoval</h1>
+          <p class="hero__role">Ingeniero en Informática</p>
+          <p class="hero__tags">Cloud · Data · Software · Automatización</p>
+          <p class="hero__text">
+            Construyo soluciones de datos y automatización de procesos: arquitecturas y pipelines en
+            Huawei Cloud, bases de datos PostgreSQL, procesos BPM en AuraQuantic y visualización en
+            Power BI, coordinando equipos técnicos y áreas funcionales.
+          </p>
 
-        <div class="section-title">
-          <h2>Acerca de mí</h2>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="https://www.linkedin.com/in/matisandev" target="_blank"
+              rel="noopener">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95C21.6 8.75 23 11 23 14.26V21h-4v-6c0-1.43-.03-3.27-2-3.27-2 0-2.3 1.56-2.3 3.17V21h-4V9Z" />
+              </svg>
+              LinkedIn
+            </a>
+            <a class="btn btn--ghost" href="https://github.com/Matisandev" target="_blank" rel="noopener">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48l-.01-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.94.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85l-.01 2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2Z" />
+              </svg>
+              GitHub
+            </a>
+            <a class="btn btn--ghost" href="#contacto">Contacto</a>
+          </div>
+
+          <ul class="hero__facts">
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0Z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              Santiago, Chile
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 4h16v16H4z" />
+                <path d="m4 6 8 6 8-6" />
+              </svg>
+              <a href="mailto:matiasandovalv@gmail.com">matiasandovalv@gmail.com</a>
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M18 10a6 6 0 0 0-12 0c0 4.5-2 6-2 6h16s-2-1.5-2-6Z" />
+                <path d="M12 22a2 2 0 0 0 2-2h-4a2 2 0 0 0 2 2Z" />
+              </svg>
+              SPS Group · AuraQuantic &amp; Huawei Cloud
+            </li>
+          </ul>
         </div>
 
-        <div class="row">
-          <div class="col-lg-4">
-            <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content">
-            <h3>Matías Sandoval</h3>
-            <p class="fst-italic">
-              Me gusta aprender, siempre estoy buscando maneras de mejorar en muchos ámbitos, me gusta buscar la manera de crear estrategias y alternativas a todo. Mi sueño es crecer profesionalmente, en un ambiente dinámico y creativo que me enseñe mucho para poder seguir avanzando personalmente.
+        <div class="hero__portrait">
+          <img src="assets/img/matias-sandoval.jpg" width="600" height="600"
+            alt="Retrato de Matías Sandoval, Ingeniero en Informática">
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Sobre mí ======= -->
+    <section class="section" id="sobre-mi">
+      <div class="container">
+        <p class="eyebrow">Sobre mí</p>
+        <h2 class="section__title">Cloud, datos y procesos que funcionan en producción</h2>
+
+        <div class="about">
+          <article class="card reveal">
+            <p>
+              Soy Ingeniero en Informática y trabajo en tecnología cloud y gestión de datos, implementando
+              soluciones escalables con Huawei Cloud y PostgreSQL, apoyado en servicios como RDS,
+              DataArts Studio y API Gateway.
             </p>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Nacimiento:</strong> <span>30 de Abril del 1999</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>WhatsApp:</strong> <span>+56 9 6787 3606</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Ciudad:</strong> <span>Santiago, Chile</span></li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Edad:</strong> <span>25 años</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Correo:</strong> <span>matiasandovalv@gmail.com</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Formación:</strong> <span>En proceso de término</span></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
+            <p>
+              He participado en proyectos de datos abiertos para el sector público: construcción de
+              pipelines ETL, disponibilización de información y capacitación de equipos técnicos para
+              operar plataformas cloud. Actualmente diseño e implemento soluciones BPM en AuraQuantic,
+              modelando procesos, formularios y reglas de negocio, con visualización en Power BI y
+              coordinación técnica del equipo de desarrollo.
+            </p>
+            <p>
+              Mi foco está en que la información sea confiable, trazable y esté disponible para quien
+              tiene que tomar decisiones.
+            </p>
+          </article>
 
-      </div>
-    </section><!-- End About Section -->
-
-    <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Conocimientos</h2>
-          <p>Durante mi crecimiento profesional, he optado por realizar algunos cursos para complementar y mejorar mi aprendizaje. Entregando los siguientes resultados cuantificables.</p>
-        </div>
-
-        <div class="row skills-content">
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill">HTML + CSS<i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Kotlin + Jetpack Compose<i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Python<i class="val">85%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill">SQL <i class="val">70%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Skills Section -->
-
-    <!-- ======= Resume Section ======= -->
-    <section id="resume" class="resume">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Resumen</h2>
-          <p>A continuación, se encontrará el detalle de formación educacional que he recibido.</p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-4">
-            <h3 class="resume-title">Educación</h3>
-            <div class="resume-item">
-              <h4>Estudiante Ingeniería Informática</h4>
-              <h5>2021 - 2024</h5>
-              <p><em>Instituto profesional Duoc UC - Santiago Centro</em></p>
-              <p>Entender el trabajo en equipo y método de trabajos. Documentación de proyectos informáticos. Enseñanzas sobre construcción web y software, integración de servicios, consultas y programación de bases de datos.</p>
-            </div>
-            <div class="resume-item">
-              <h4>Pedagogía en educación física</h4>
-              <h5>2018 - 2020 (Incompleto)</h5>
-              <p><em>Universidad Metropolitana de las Ciencias de la Educación - Macul</em></p>
-              <p>Trababajar en la comunicación con estudiantes. Creación y planificación de clases en temporadas, en búsqueda de objetivos que conllevan la corporeidad de cada uno.</p>
-            </div>
-            <div class="resume-item">
-              <h4>Educación media</h4>
-              <h5>2016 - 2017</h5>
-              <p><em>Colegio San Adrián - Quilicura</em></p>
-              <p>Enseñanzas e intereses relacionado a Astrofísica y Termodinámica. Estudiante galardonado en participación de proyectos científicos.</p>
-            </div>
-            <div class="resume-item">
-              <h4>Educación media y básica</h4>
-              <h5>2010 - 2015</h5>
-              <p><em>Colegio Padre Pedro Arrupe - Quilicura</em></p>
-              <p>Estudiante honorífico en mejor rendimiento. </p>
-            </div>
-            <div class="resume-item">
-              <h4>Educación básica</h4>
-              <h5>2005 - 2009</h5>
-              <p><em>Colegio Mercedes Fontesilla de Carrera - Quilicura</em></p>
-              <p>Estudiante de altas calificaciones y destacado generacional. </p>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <h3 class="resume-title">Experiencia laboral</h3>
-            <div class="resume-item">
-              <h4>Analista de datos</h4>
-              <h5>Agosto 2024 - Actualidad</h5>
-              <p><em>SPS Group - Remoto</em></p>
-              <ul>
-                <li>Manejo de datos Huawei Cloud</li>
-                <li>Administración de datos con SQL nivel intermedio</li>
-                <li>Construcción ETL con Python</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Administrador web</h4>
-              <h5>Mayo 2024 - Actualidad</h5>
-              <p><em>Ingenieria Mayo - Remoto</em></p>
-              <ul>
-                <li>Construcción de sitio web en Wordpress, actualización de contenido.</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Administrador web y marketing digital</h4>
-              <h5>Mayo 2024 - Julio 2024</h5>
-              <p><em>ElPet - Providencia</em></p>
-              <ul>
-                <li>Construcción de campañas de marketing digital en Google Ads, Meta, Woocomerce, Mercado Libre.</li>
-                <li>Análisis y construcción de datos empresariales en Google Sheets y Excel nivel básico.</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Asistente informático y comercial</h4>
-              <h5>Marzo 2024 - Mayo 2024</h5>
-              <p><em>UltraPc DHC - Providencia</em></p>
-              <ul>
-                <li>Desarrollo y construcción de base de datos empresarial, usando SQL nivel básico.</li>
-                <li>Gestor de proyecto de software empresarial.</li>
-                <li>Restauración y mantenimiento de notebooks para ventas.</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Técnico en computación, marketing digital y analista programador</h4>
-              <h5>Marzo 2021 - Septiembre 2023</h5>
-              <p><em>CSByte - Santiago Centro</em></p>
-              <ul>
-                <li>Restauración de computadores, instalación de SO, drivers, software, mantenimiento general.</li>
-                <li>Asesoría y armado de computadores gamer.</li>
-                <li>Construcción y mantenimiento de sitio web Ecommerce en Wordpress.</li>
-                <li>Diseñador de imagen empresarial y creador audiovisual para redes sociales. </li>
-                <li>Gestor de contenido empresarial y análisis de resultados.</li>
-                <li>Implementación web scraping con Python de datos comerciales para realizar métricas en Excel nivel básico. </li>
-                <li>Recopilación de datos empresariales usando SQL nivel básico.</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Jefe de local - Cajero</h4>
-              <h5>Enero 2015 - Febrero 2021</h5>
-              <p><em>Distribuidora O'higgins SPA - Quilicura</em></p>
-              <ul>
-                <li>Coordinador de equipos</li>
-                <li>Organización de despachos</li>
-                <li>Ventas al por mayor y detalle</li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <h3 class="resume-title">Certificaciones</h3>
-            <div class="resume-item">
-              <h4>Inglés internacional nivel: Intermedio alto</h4>
-              <h5>DUOC UC</h5>
-              <p><em>Instituto profesional Duoc UC - Santiago Centro</em></p>
-              <a href="https://certificadovalida.duoc.cl/ValidacionQr?id=3307004007">Ver certificación</a>
-            </div>
-            <div class="resume-item">
-              <h4>Programación de software</h4>
-              <h5>DUOC UC</h5>
-              <p><em>Instituto profesional Duoc UC - Santiago Centro</em></p>
-              <a href="https://certificadovalida.duoc.cl/ValidacionQr?id=3307004007">Ver certificación</a>
-            </div>
-            <div class="resume-item">
-              <h4>Calidad de software</h4>
-              <h5>DUOC UC</h5>
-              <p><em>Instituto profesional Duoc UC - Santiago Centro</em></p>
-              <a href="https://certificadovalida.duoc.cl/ValidacionQr?id=3307004007">Ver certificación</a>
-            </div>
-            <div class="resume-item">
-              <h4>Arquitectura de software</h4>
-              <h5>DUOC UC</h5>
-              <p><em>Instituto profesional Duoc UC - Santiago Centro</em></p>
-              <a href="https://certificadovalida.duoc.cl/ValidacionQr?id=3307004007">Ver certificación</a>
-            </div>
-            <div class="resume-item">
-              <h4>Análisis y planificación de proyectos informáticos</h4>
-              <h5>DUOC UC</h5>
-              <p><em>Instituto profesional Duoc UC - Santiago Centro</em></p>
-              <a href="https://certificadovalida.duoc.cl/ValidacionQr?id=3307004007">Ver certificación</a>
-            </div>
-            <div class="resume-item">
-              <h4>Gestión de proyectos informáticos</h4>
-              <h5>DUOC UC</h5>
-              <p><em>Instituto profesional Duoc UC - Santiago Centro</em></p>
-              <a href="https://certificadovalida.duoc.cl/ValidacionQr?id=3307004007">Ver certificación</a>
-            </div>
-            <div class="resume-item">
-              <h4>Análisis y desarrollo de modelo de datos</h4>
-              <h5>DUOC UC</h5>
-              <p><em>Instituto profesional Duoc UC - Santiago Centro</em></p>
-              <a href="https://certificadovalida.duoc.cl/ValidacionQr?id=3307004007">Ver certificación</a>
-            </div>
-            <div class="resume-item">
-              <h4>Desarrollo de apps para Android con Kotlin y Jetpack Compose</h4>
-              <h5>Udemy</h5>
-              <p><em>Jorge Maldonado - Remoto</em></p>
-              <a href="http://ude.my/UC-00e32c67-806b-4345-a2f1-a42fa1e21b9b">Ver certificación</a>
-            </div>
-            <div class="resume-item">
-              <h4>Manejo de Python</h4>
-              <h5>Udemy</h5>
-              <p><em>Portal Ingenieria - Remoto</em></p>
-              <a href="http://ude.my/UC-dbff9599-13de-44a2-b01f-ce6a0b573f96">Ver certificación</a>
-            </div>
-            <div class="resume-item">
-              <h4>Curso de Wordpress 2024</h4>
-              <h5>Udemy</h5>
-              <p><em>Renato Yacolca - Remoto</em></p>
-              <a href="http://ude.my/UC-7ad4c910-50a9-4a07-99a2-9ffc2f6feaa7">Ver certificación</a>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Resume Section -->
-<!--
-    ======= Portfolio Section ======= 
-    <section id="portfolio" class="portfolio section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Portafolio</h2>
-          <p>A continuación, se podrán visualizar pequeños proyectos, los cuales he desarrolado durante mi trayecto profesional. Siempre buscando la mejora contínua.</p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Web</li>
+          <aside class="card reveal">
+            <ul class="about__highlights">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M17.5 19a4.5 4.5 0 0 0 .5-8.97A6 6 0 0 0 6.2 9.2 4.5 4.5 0 0 0 6.5 19h11Z" />
+                </svg>
+                <span><strong>Cloud &amp; Data</strong>Huawei Cloud, ETL, arquitectura y disponibilización de
+                  datos</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M3 3v18h18" />
+                  <path d="M7 15l4-4 3 3 5-6" />
+                </svg>
+                <span><strong>Automatización &amp; BI</strong>BPM en AuraQuantic y reportería en Power BI</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                  <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                </svg>
+                <span><strong>Coordinación técnica</strong>Puente entre áreas funcionales y equipos de
+                  desarrollo, con metodología SCRUM</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+                  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z" />
+                </svg>
+                <span><strong>Sector público</strong>Proyectos ODE y Chile Emprende con el Ministerio de
+                  Economía</span>
+              </li>
             </ul>
-          </div>
+          </aside>
         </div>
-
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 1</h4>
-                <p>App</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Web 3</h4>
-                <p>Web</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 2</h4>
-                <p>App</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Card 2</h4>
-                <p>Card</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Web 2</h4>
-                <p>Web</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 3</h4>
-                <p>App</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Card 1</h4>
-                <p>Card</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Card 3</h4>
-                <p>Card</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Web 3</h4>
-                <p>Web</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section> End Portfolio Section -->
-
-    <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Referencias</h2>
-        </div>
-
-        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper">
-
-            <!--<div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                <h3>Ariel Pino</h3>
-                <h4>Dueño Hacienda el Llano</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                <h3>Ariel Diaz</h3>
-                <h4>Subgerente de operaciones e Ingeniero Informático - CSByte</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                <h3>Iván Mayo</h3>
-                <h4>CEO e Ingeniero Eléctrico - Ingeniería Mayo</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div>-->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                <h3>Paloma Mayo</h3>
-                <h4>Psicóloga laboral</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Matías una persona sociable, amable, sincero y con una responsabilidad admirable. Se toma su trabajo muy en serio, cumpliendo siempre los plazos establecidos.
-                  Ve más allá de los proyectos; pregunta, averigua y encuentra soluciones o crea nuevas estrategias para poder optimizar el trabajo personal o grupal.
-                  Es una persona alegre, siempre logra sacar una sonrisa en su equipo de trabajo. Trabajar y convivir con él es una verdadera experiencia.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                <h3>Lisbeth Venegas</h3>
-                <h4>Ingeniera en Marketing</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  He tenido el privilegio de conocer a Matías durante 3 años, donde he conocido su carácter y sus capacidades. 
-                  Matías es una persona sumamente responsable, cumple con sus oblicaciones y plazos establecidos, asegura que su trabajo sea de alta calidad. Además, es muy confiable y siempre esta dispuesto a ayudar a sus compañeros.
-                  También es una persona muy social y amigable. Es un excelente comunicador y sabe como establecer relaciones solidas con sus compañeros de trabajos y clientes.
-                  Es una persona muy proactiva, siempre anda en busca de mejorar y contribuir con el éxito de su equipo de trabajo. Es pensador y creativo.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div>
-
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
       </div>
     </section>
 
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container" data-aos="fade-up">
+    <!-- ======= Experiencia ======= -->
+    <section class="section" id="experiencia">
+      <div class="container">
+        <p class="eyebrow">Experiencia</p>
+        <h2 class="section__title">Trayectoria profesional</h2>
+        <p class="section__lead">
+          Evolución desde ingeniería de datos en Huawei Cloud hasta desarrollo BPM y coordinación técnica.
+        </p>
 
-        <div class="section-title">
-          <h2>Contacto</h2>
-        </div>
-        <div class="row mt-1">
+        <article class="card company reveal">
+          <div class="company__head">
+            <h3 class="company__name">SPS Group</h3>
+            <p class="company__meta">Ago 2024 — Actualidad · Santiago, Chile</p>
+          </div>
+          <p class="company__intro">
+            Progresión de ingeniero de datos a desarrollador AuraQuantic y coordinador técnico, en
+            proyectos de datos abiertos y automatización de procesos.
+          </p>
 
-          <div class="col-lg-4">
-            <div class="info">
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Región:</h4>
-                <p>Metropolitana, Santiago.</p>
-              </div>
+          <ol class="timeline">
+            <li class="timeline__item timeline__item--current">
+              <h4 class="timeline__role">Desarrollador AuraQuantic <span class="badge">Actual</span></h4>
+              <p class="timeline__meta">Ene 2026 — Actualidad</p>
+              <p class="timeline__desc">
+                Diseño y desarrollo integral de la solución BPM en AuraQuantic, cubriendo planificación,
+                ejecución en terreno, registro, control y análisis. Modelado de procesos, formularios,
+                flujos y reglas de negocio; coordinación técnica del equipo de desarrollo; parametrización
+                continua de la plataforma e integración de componentes de escritorio y móviles para la
+                captura de datos operacionales.
+              </p>
+            </li>
+            <li class="timeline__item timeline__item--current">
+              <h4 class="timeline__role">Desarrollador AuraQuantic / Power BI <span class="badge">Actual</span></h4>
+              <p class="timeline__meta">Oct 2025 — Actualidad</p>
+              <p class="timeline__desc">
+                Desarrollo e implementación de soluciones BPM en AuraQuantic durante todo el ciclo de vida
+                del proyecto: levantamiento y validación de requerimientos con usuarios y áreas funcionales,
+                modelado de flujos y formularios, parametrización avanzada, mejoras evolutivas y correctivas,
+                integración de datos y apoyo a la visualización de información con Power BI.
+              </p>
+            </li>
+            <li class="timeline__item">
+              <h4 class="timeline__role">Desarrollador Backend &amp; Coordinador Técnico — Plataforma Chile Emprende
+              </h4>
+              <p class="timeline__meta">Jun 2025 — Oct 2025</p>
+              <p class="timeline__desc">
+                Diseño del modelo de datos y de la lógica backend para la recomendación inteligente de
+                instrumentos de apoyo estatal en una plataforma web para empresas de menor tamaño, con
+                autenticación Clave Única y gestión centralizada de datos (ODE/SAD). Nexo entre la Unidad de
+                Empresas de Menor Tamaño del Ministerio de Economía y el equipo de desarrollo: traducción de
+                requerimientos a especificaciones técnicas, coordinación de tareas, flujos de ingesta vía
+                scraping e integración de APIs, y visualización en Power BI.
+              </p>
+            </li>
+            <li class="timeline__item">
+              <h4 class="timeline__role">Ingeniero de Datos — apoyo externo por proyecto</h4>
+              <p class="timeline__meta">Ene 2025 — Jun 2025</p>
+              <p class="timeline__desc">
+                Habilitación de datos para el portal de datos abiertos «Chile Emprende» sobre Huawei Cloud.
+                Optimización de bases de datos PostgreSQL para visualización, usando RDS, DataArts Migration
+                y DataArts Factory para el procesamiento y carga de datos estructurados, además de la
+                automatización de flujos de ingesta y validación.
+              </p>
+            </li>
+            <li class="timeline__item">
+              <h4 class="timeline__role">Ingeniero de Datos — proyecto Observatorio de Datos Económicos (ODE)</h4>
+              <p class="timeline__meta">Ago 2024 — Dic 2024</p>
+              <p class="timeline__desc">
+                Desarrollo cloud sobre Huawei Cloud con DataArts Studio, DataLake Insight, API Gateway, RDS,
+                MRS y OBS: construcción de infraestructura de datos e integración de servicios, creación y
+                administración de Data Lakes, despliegue de APIs para automatizar la carga de datos y uso de
+                servicios de seguridad y gobierno de datos.
+              </p>
+            </li>
+          </ol>
+        </article>
 
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p>matiasandovalv@gmail.com</p>
-              </div>
+        <article class="card company reveal">
+          <div class="company__head">
+            <h3 class="company__name">Ministerio de Economía, Gobierno de Chile</h3>
+            <p class="company__meta">Ene 2025 — Jun 2025 · Santiago</p>
+          </div>
+          <h4 class="timeline__role">Consultor Semi Senior Externo</h4>
+          <p class="timeline__desc">
+            Asesoría en terreno para la implementación del proyecto ODE: pipelines ETL y arquitectura cloud
+            con DataArts Studio, DataLake Insight, API Gateway, RDS, MRS y OBS para integrar y automatizar la
+            ingesta de datos de instituciones públicas (SII, Sercotec, Corfo, DAES, Cooperativas). Capacitación
+            presencial a funcionarios en el uso de la plataforma ODE y fundamentos de SQL, además del apoyo al
+            despliegue en producción y la documentación técnica del flujo de datos.
+          </p>
+        </article>
 
-              <div class="phone">
-                <i class="bi bi-phone"></i>
-                <h4>Teléfono:</h4>
-                <p>+56 9 6787 3606</p>
-              </div>
-
+        <article class="card reveal">
+          <h3 class="company__name">Experiencia previa</h3>
+          <div class="experience__more">
+            <div class="role-compact">
+              <h4>Event Staff · Coordinador de Watch Parties — KRÜ Esports</h4>
+              <p class="company__meta">Mar 2024 — Ago 2025</p>
+              <p>Organización y producción técnica de eventos: logística, transmisión, captura audiovisual y
+                animación de las Watch Parties del equipo de Valorant.</p>
             </div>
-
+            <div class="role-compact">
+              <h4>Administrador web y estratega de marketing — ElPet</h4>
+              <p class="company__meta">May 2024 — Jul 2024</p>
+              <p>Actualización de contenidos en WordPress, SEO y campañas en Google Ads; creación de SKUs,
+                control de inventario e implementación del sistema de ventas Gesnex con capacitación al equipo.</p>
+            </div>
+            <div class="role-compact">
+              <h4>Asistente informático y comercial — UltraPC DHC</h4>
+              <p class="company__meta">Mar 2024 — May 2024</p>
+              <p>Migración a base de datos empresarial con SQL y apoyo técnico al ecommerce.</p>
+            </div>
+            <div class="role-compact">
+              <h4>Analista de datos comerciales — CSBYTE</h4>
+              <p class="company__meta">Jul 2023 — Sep 2023</p>
+              <p>Recopilación de datos comerciales y análisis de mercado con Python y SQL, con métricas en Excel.</p>
+            </div>
+            <div class="role-compact">
+              <h4>Administrador Ecommerce y Marketing Digital — CSBYTE</h4>
+              <p class="company__meta">Sep 2021 — Jun 2023</p>
+              <p>Administración de tiendas en PrestaShop y WooCommerce, contenido audiovisual publicitario y
+                asesoría en computación.</p>
+            </div>
           </div>
-
-          <div class="col-lg-8 mt-5 mt-lg-0">
-            <form id="contact-form" action="#" role="form" class="php-email-form">
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" class="form-control" id="name" name="name" placeholder="Su nombre" required>
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" id="email" name="email" placeholder="Su correo" required>
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <input type="number" class="form-control" id="phone" name="phone" placeholder="Su teléfono" required>
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" id="message" name="message" rows="5" placeholder="Escriba aquí su mensaje" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Cargando</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Su mensaje ha sido enviado. Gracias!</div>
-              </div>
-              <div class="text-center">
-                <button type="submit">Enviar mensaje</button>
-              </div>
-            </form>
-          </div>
-        </div>
-
+        </article>
       </div>
     </section>
 
-  </main><!-- End #main -->
+    <!-- ======= Stack ======= -->
+    <section class="section" id="stack">
+      <div class="container">
+        <p class="eyebrow">Tecnologías</p>
+        <h2 class="section__title">Stack y competencias</h2>
+        <p class="section__lead">
+          Herramientas y prácticas que uso a diario en proyectos de datos, cloud y automatización.
+        </p>
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
-      <h3>Matías Sandoval</h3>
-      <p>"Tengo gran interés en seguir creciendo y mejorando. Qué mejor que hacerlo en un equipo dinámico y en un ambiente agradable."</p>
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/matisandoval/" class="linkedin" target="_blank"><i class="bx bxl-linkedin"></i></a>
-        <a href="https://github.com/MatiSandovalV" class="linkedin" target="_blank"><i class="bi bi-github"></i></a>
+        <div class="grid grid--2">
+          <article class="card reveal">
+            <h3 class="stack__title">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <ellipse cx="12" cy="5" rx="9" ry="3" />
+                <path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5" />
+                <path d="M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3" />
+              </svg>
+              Datos y bases de datos
+            </h3>
+            <ul class="chips">
+              <li class="chip">PostgreSQL</li>
+              <li class="chip">SQL</li>
+              <li class="chip">ETL</li>
+              <li class="chip">Data Lakes</li>
+              <li class="chip">Modelado de datos</li>
+              <li class="chip">Arquitectura de datos</li>
+            </ul>
+          </article>
+
+          <article class="card reveal">
+            <h3 class="stack__title">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M17.5 19a4.5 4.5 0 0 0 .5-8.97A6 6 0 0 0 6.2 9.2 4.5 4.5 0 0 0 6.5 19h11Z" />
+              </svg>
+              Cloud — Huawei Cloud
+            </h3>
+            <ul class="chips">
+              <li class="chip">RDS</li>
+              <li class="chip">DataArts Studio</li>
+              <li class="chip">DataArts Factory</li>
+              <li class="chip">DataArts Migration</li>
+              <li class="chip">DataLake Insight</li>
+              <li class="chip">OBS</li>
+              <li class="chip">MRS</li>
+              <li class="chip">API Gateway</li>
+            </ul>
+          </article>
+
+          <article class="card reveal">
+            <h3 class="stack__title">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="m8 6-6 6 6 6" />
+                <path d="m16 6 6 6-6 6" />
+              </svg>
+              Desarrollo
+            </h3>
+            <ul class="chips">
+              <li class="chip">Python</li>
+              <li class="chip">APIs</li>
+              <li class="chip">Web scraping</li>
+              <li class="chip">HTML + CSS</li>
+              <li class="chip">JavaScript</li>
+              <li class="chip">TypeScript</li>
+              <li class="chip">Kotlin + Jetpack Compose</li>
+              <li class="chip">WordPress</li>
+            </ul>
+          </article>
+
+          <article class="card reveal">
+            <h3 class="stack__title">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M3 3v18h18" />
+                <rect x="7" y="11" width="3" height="6" />
+                <rect x="13" y="7" width="3" height="10" />
+              </svg>
+              Procesos y BI
+            </h3>
+            <ul class="chips">
+              <li class="chip">AuraQuantic</li>
+              <li class="chip">BPM</li>
+              <li class="chip">Power BI</li>
+              <li class="chip">Análisis de requerimientos</li>
+              <li class="chip">SCRUM</li>
+              <li class="chip">Coordinación técnica</li>
+            </ul>
+          </article>
+        </div>
       </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: [license-url] -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/ -->
-         <a href="https://bootstrapmade.com/"></a>
+    </section>
+
+    <!-- ======= Proyectos ======= -->
+    <section class="section" id="proyectos">
+      <div class="container">
+        <p class="eyebrow">Proyectos</p>
+        <h2 class="section__title">Proyectos destacados</h2>
+        <p class="section__lead">
+          Trabajos profesionales y personales con impacto verificable.
+        </p>
+
+        <div class="grid grid--3">
+          <article class="card project reveal">
+            <h3>Observatorio de Datos Económicos (ODE)</h3>
+            <p class="project__desc">
+              Infraestructura de datos en Huawei Cloud para integrar información de instituciones públicas
+              (SII, Sercotec, Corfo, DAES, Cooperativas), con pipelines ETL, Data Lakes y APIs de carga
+              automatizada. Incluyó capacitación a funcionarios del Ministerio de Economía.
+            </p>
+            <ul class="chips">
+              <li class="chip">Huawei Cloud</li>
+              <li class="chip">DataArts Studio</li>
+              <li class="chip">PostgreSQL</li>
+              <li class="chip">API Gateway</li>
+            </ul>
+          </article>
+
+          <article class="card project reveal">
+            <h3>Plataforma Chile Emprende</h3>
+            <p class="project__desc">
+              Plataforma web para empresas de menor tamaño que integra datos de múltiples instituciones
+              públicas y recomienda instrumentos de apoyo estatal, con autenticación Clave Única. Participé
+              en el modelo de datos, la lógica backend y la coordinación técnica.
+            </p>
+            <ul class="chips">
+              <li class="chip">Backend</li>
+              <li class="chip">PostgreSQL</li>
+              <li class="chip">ETL</li>
+              <li class="chip">Power BI</li>
+            </ul>
+          </article>
+
+          <article class="card project reveal">
+            <h3>ProRoller</h3>
+            <p class="project__desc">
+              Plataforma de contenido sobre patinaje: disciplinas, tutoriales, guías de seguridad y lugares
+              donde patinar, con soporte multiidioma.
+            </p>
+            <ul class="chips">
+              <li class="chip">Next.js</li>
+              <li class="chip">React</li>
+              <li class="chip">TypeScript</li>
+            </ul>
+            <p class="project__links">
+              <a href="https://pro-roller-six.vercel.app/" target="_blank" rel="noopener">
+                Ver sitio
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M7 17 17 7" />
+                  <path d="M7 7h10v10" />
+                </svg>
+              </a>
+            </p>
+          </article>
+
+          <article class="card project reveal">
+            <h3>OnlineRoom</h3>
+            <p class="project__desc">
+              Aplicación móvil para agendar clases online, desarrollada como proyecto personal.
+            </p>
+            <ul class="chips">
+              <li class="chip">TypeScript</li>
+              <li class="chip">Mobile</li>
+            </ul>
+            <p class="project__links">
+              <a href="https://github.com/Matisandev/OnlineRoom" target="_blank" rel="noopener">
+                Repositorio
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M7 17 17 7" />
+                  <path d="M7 7h10v10" />
+                </svg>
+              </a>
+            </p>
+          </article>
+
+          <article class="card project reveal">
+            <h3>SociosCoop</h3>
+            <p class="project__desc">
+              Sistema de gestión de socios de cooperativa integrado con base de datos local, desarrollado
+              como proyecto de título en Duoc UC.
+            </p>
+            <ul class="chips">
+              <li class="chip">SQL</li>
+              <li class="chip">Base de datos</li>
+            </ul>
+            <p class="project__links">
+              <a href="https://github.com/Matisandev/Proyecto_final_SociosCoop" target="_blank" rel="noopener">
+                Proyecto final
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M7 17 17 7" />
+                  <path d="M7 7h10v10" />
+                </svg>
+              </a>
+              <a href="https://github.com/Matisandev/SociosCoopv3" target="_blank" rel="noopener">
+                Versión 3
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M7 17 17 7" />
+                  <path d="M7 7h10v10" />
+                </svg>
+              </a>
+            </p>
+          </article>
+        </div>
       </div>
+    </section>
+
+    <!-- ======= Formación ======= -->
+    <section class="section" id="formacion">
+      <div class="container">
+        <p class="eyebrow">Formación</p>
+        <h2 class="section__title">Educación y certificaciones</h2>
+
+        <div class="grid grid--2">
+          <article class="card edu reveal">
+            <h3>Ingeniería en Informática</h3>
+            <p class="edu__school">Instituto Profesional Duoc UC · 2021 — 2024</p>
+            <p>
+              Formación completada. Arquitectura y calidad de software, integración de servicios, modelado y
+              programación de bases de datos, y gestión de proyectos informáticos.
+            </p>
+          </article>
+
+          <article class="card edu reveal">
+            <h3>Pedagogía en Educación Física</h3>
+            <p class="edu__school">Universidad Metropolitana de Ciencias de la Educación · 2018 — 2020 (incompleta)</p>
+            <p>
+              Base en comunicación, planificación y trabajo con equipos, que hoy aplico en la capacitación de
+              usuarios y en la coordinación entre áreas técnicas y funcionales.
+            </p>
+          </article>
+        </div>
+
+        <h3 class="certs__title">Certificaciones</h3>
+        <div class="certs">
+          <div class="cert">
+            <h4>Inglés internacional — nivel intermedio alto<span>Duoc UC</span></h4>
+            <a class="cert__link" href="https://certificadovalida.duoc.cl/ValidacionQr?id=3307004007" target="_blank"
+              rel="noopener" aria-label="Ver certificación de Inglés internacional en Duoc UC">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M7 17 17 7" />
+                <path d="M7 7h10v10" />
+              </svg>
+            </a>
+          </div>
+          <div class="cert">
+            <h4>Programación de software<span>Duoc UC</span></h4>
+            <a class="cert__link" href="https://certificadovalida.duoc.cl/ValidacionQr?id=3307004007" target="_blank"
+              rel="noopener" aria-label="Ver certificación de Programación de software en Duoc UC">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M7 17 17 7" />
+                <path d="M7 7h10v10" />
+              </svg>
+            </a>
+          </div>
+          <div class="cert">
+            <h4>Calidad de software<span>Duoc UC</span></h4>
+            <a class="cert__link" href="https://certificadovalida.duoc.cl/ValidacionQr?id=3307004007" target="_blank"
+              rel="noopener" aria-label="Ver certificación de Calidad de software en Duoc UC">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M7 17 17 7" />
+                <path d="M7 7h10v10" />
+              </svg>
+            </a>
+          </div>
+          <div class="cert">
+            <h4>Arquitectura de software<span>Duoc UC</span></h4>
+            <a class="cert__link" href="https://certificadovalida.duoc.cl/ValidacionQr?id=3307004007" target="_blank"
+              rel="noopener" aria-label="Ver certificación de Arquitectura de software en Duoc UC">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M7 17 17 7" />
+                <path d="M7 7h10v10" />
+              </svg>
+            </a>
+          </div>
+          <div class="cert">
+            <h4>Análisis y planificación de proyectos informáticos<span>Duoc UC</span></h4>
+            <a class="cert__link" href="https://certificadovalida.duoc.cl/ValidacionQr?id=3307004007" target="_blank"
+              rel="noopener" aria-label="Ver certificación de Análisis y planificación de proyectos informáticos en Duoc UC">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M7 17 17 7" />
+                <path d="M7 7h10v10" />
+              </svg>
+            </a>
+          </div>
+          <div class="cert">
+            <h4>Gestión de proyectos informáticos<span>Duoc UC</span></h4>
+            <a class="cert__link" href="https://certificadovalida.duoc.cl/ValidacionQr?id=3307004007" target="_blank"
+              rel="noopener" aria-label="Ver certificación de Gestión de proyectos informáticos en Duoc UC">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M7 17 17 7" />
+                <path d="M7 7h10v10" />
+              </svg>
+            </a>
+          </div>
+          <div class="cert">
+            <h4>Análisis y desarrollo de modelo de datos<span>Duoc UC</span></h4>
+            <a class="cert__link" href="https://certificadovalida.duoc.cl/ValidacionQr?id=3307004007" target="_blank"
+              rel="noopener" aria-label="Ver certificación de Análisis y desarrollo de modelo de datos en Duoc UC">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M7 17 17 7" />
+                <path d="M7 7h10v10" />
+              </svg>
+            </a>
+          </div>
+          <div class="cert">
+            <h4>Desarrollo de apps Android con Kotlin y Jetpack Compose<span>Udemy</span></h4>
+            <a class="cert__link" href="https://ude.my/UC-00e32c67-806b-4345-a2f1-a42fa1e21b9b" target="_blank"
+              rel="noopener" aria-label="Ver certificación de desarrollo Android en Udemy">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M7 17 17 7" />
+                <path d="M7 7h10v10" />
+              </svg>
+            </a>
+          </div>
+          <div class="cert">
+            <h4>Manejo de Python<span>Udemy</span></h4>
+            <a class="cert__link" href="https://ude.my/UC-dbff9599-13de-44a2-b01f-ce6a0b573f96" target="_blank"
+              rel="noopener" aria-label="Ver certificación de Python en Udemy">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M7 17 17 7" />
+                <path d="M7 7h10v10" />
+              </svg>
+            </a>
+          </div>
+          <div class="cert">
+            <h4>Curso de WordPress 2024<span>Udemy</span></h4>
+            <a class="cert__link" href="https://ude.my/UC-7ad4c910-50a9-4a07-99a2-9ffc2f6feaa7" target="_blank"
+              rel="noopener" aria-label="Ver certificación de WordPress en Udemy">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M7 17 17 7" />
+                <path d="M7 7h10v10" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Referencias ======= -->
+    <section class="section" id="referencias">
+      <div class="container">
+        <p class="eyebrow">Referencias</p>
+        <h2 class="section__title">Lo que dicen de mi trabajo</h2>
+
+        <div class="grid grid--2">
+          <blockquote class="card quote reveal">
+            <p>
+              «Matías es una persona sociable, amable, sincera y con una responsabilidad admirable. Se toma su
+              trabajo muy en serio, cumpliendo siempre los plazos establecidos. Ve más allá de los proyectos:
+              pregunta, averigua y encuentra soluciones o crea nuevas estrategias para optimizar el trabajo
+              personal o grupal.»
+            </p>
+            <p class="quote__author">Paloma Mayo <span>Psicóloga laboral</span></p>
+          </blockquote>
+
+          <blockquote class="card quote reveal">
+            <p>
+              «Matías es una persona sumamente responsable, cumple con sus obligaciones y plazos, y asegura que
+              su trabajo sea de alta calidad. Es confiable, proactivo y un excelente comunicador: sabe cómo
+              establecer relaciones sólidas con compañeros y clientes.»
+            </p>
+            <p class="quote__author">Lisbeth Venegas <span>Ingeniera en Marketing</span></p>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Contacto ======= -->
+    <section class="section" id="contacto">
+      <div class="container">
+        <p class="eyebrow">Contacto</p>
+        <h2 class="section__title">Conversemos</h2>
+        <p class="section__lead">
+          Para oportunidades o consultas sobre cloud, ingeniería de datos, BPM y BI, escríbeme por correo o
+          LinkedIn.
+        </p>
+
+        <div class="card reveal">
+          <div class="contact__grid">
+            <div class="contact__item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 4h16v16H4z" />
+                <path d="m4 6 8 6 8-6" />
+              </svg>
+              <div>
+                <h3>Email</h3>
+                <a href="mailto:matiasandovalv@gmail.com">matiasandovalv@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact__item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0Z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              <div>
+                <h3>Ubicación</h3>
+                <p>Santiago, Región Metropolitana, Chile</p>
+              </div>
+            </div>
+            <div class="contact__item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.8v1.7h.05c.53-.95 1.83-1.95 3.77-1.95C21.6 8.75 23 11 23 14.26V21h-4v-6c0-1.43-.03-3.27-2-3.27-2 0-2.3 1.56-2.3 3.17V21h-4V9Z" />
+              </svg>
+              <div>
+                <h3>LinkedIn</h3>
+                <a href="https://www.linkedin.com/in/matisandev" target="_blank" rel="noopener">/in/matisandev</a>
+              </div>
+            </div>
+            <div class="contact__item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48l-.01-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.94.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85l-.01 2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2Z" />
+              </svg>
+              <div>
+                <h3>GitHub</h3>
+                <a href="https://github.com/Matisandev" target="_blank" rel="noopener">@Matisandev</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year">2026</span> Matías Sandoval — Ingeniero en Informática</p>
+      <nav class="footer__links" aria-label="Enlaces de contacto">
+        <a href="https://www.linkedin.com/in/matisandev" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/Matisandev" target="_blank" rel="noopener">GitHub</a>
+        <a href="mailto:matiasandovalv@gmail.com">Email</a>
+      </nav>
     </div>
-  </footer><!-- End Footer -->
+  </footer>
 
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-<script src="assets/vendor/aos/aos.js"></script>
-<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-<script src="assets/vendor/typed.js/typed.umd.js"></script>
-<script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-<script src="assets/vendor/php-email-form/validate.js"></script>
-
-<!-- Template Main JS File -->
-<script src="assets/js/main.js"></script>
-
-<!-- Contact-Form Script -->
-<script>
-  $(document).ready(function() {
-    $("#contact-form").submit(function(e) {
-      e.preventDefault(); // Prevenir el envío del formulario para manejar el mensaje de WhatsApp
-
-      let name = $('#name').val();
-      let email = $('#email').val();
-      let phone = $('#phone').val();
-      let message = $('#message').val();
-      let string = '';
-
-      string += 'Nombre: ' + name + ' | ';
-      string += 'Correo: ' + email + ' | ';
-      string += 'Teléfono: ' + phone + ' | ';
-      string += 'Mensaje: ' + message + ' ';
-
-      // Limpiar el formulario
-      $('#contact-form')[0].reset();
-
-      // Abrir la conversación de WhatsApp
-      window.open('https://wa.me/+569967873606?text=' + encodeURIComponent(string), '_blank');
-    });
-  });
-</script>
-
-  <!-- jQuery -->
-  <script src="assets/js/jquery.min.js"></script>
-  <!-- jQuery -->
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-  </script>
+  <script src="assets/js/main.js" defer></script>
 </body>
 
 </html>
