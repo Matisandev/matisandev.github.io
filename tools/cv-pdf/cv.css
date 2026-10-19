@@ -319,25 +319,26 @@ a {
   break-after: avoid;
 }
 
-.quotes {
-  display: grid;
-  gap: 3mm;
-}
-
-.quotes blockquote {
+.reference {
   padding: 3mm 4mm;
   border-left: 2px solid var(--brand);
   background: #f5f7fb;
   break-inside: avoid;
 }
 
-.quotes p {
-  font-style: italic;
+.reference__name {
+  font-weight: 600;
+}
+
+.reference__name span {
+  margin-left: 1.5mm;
+  font-weight: 400;
   color: var(--muted);
 }
 
-.quotes footer {
-  margin-top: 1.5mm;
-  font-size: 8.8pt;
-  font-weight: 600;
+.reference__contact {
+  display: flex;
+  gap: 6mm;
+  margin-top: 1mm;
+  font-size: 9pt;
 }

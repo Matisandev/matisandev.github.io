@@ -44,7 +44,7 @@ los enlaces, clicables.
 
 1. Edita el contenido en `index.html` como siempre.
 2. Replica el mismo cambio en `tools/cv-pdf/cv.html`. Ambos archivos usan las mismas secciones
-   (Sobre mí, Experiencia, Stack/Conocimientos, Proyectos, Formación/Certificaciones, Referencias) y los
+   (Sobre mí, Experiencia, Stack/Conocimientos, Proyectos, Formación/Certificaciones, Referencia) y los
    mismos textos, así que basta con copiar el párrafo, cargo o certificación correspondiente.
 3. Regenera el PDF (requiere Google Chrome o Chromium instalado y conexión para cargar la fuente Inter):
 
