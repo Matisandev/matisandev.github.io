@@ -22,8 +22,8 @@
   <meta property="og:image" content="https://www.matisandev.cl/assets/img/profile-img.jpg">
   <meta name="twitter:card" content="summary">
 
-  <link rel="icon" href="assets/img/favicon2.png">
-  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon-ms.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,6 +38,13 @@
       try { stored = localStorage.getItem("theme"); } catch (error) { stored = null; }
       var theme = stored === "light" || stored === "dark" ? stored : "dark";
       document.documentElement.setAttribute("data-theme", theme);
+
+      var lang = null;
+      var match = /[?&]lang=(es|en|pt)\b/.exec(window.location.search);
+      try { lang = match ? match[1] : localStorage.getItem("lang"); } catch (error) { lang = null; }
+      if (lang === "en" || lang === "pt") {
+        document.documentElement.setAttribute("lang", lang === "pt" ? "pt-BR" : "en");
+      }
     })();
   </script>
 
@@ -72,6 +79,27 @@
         <span class="brand__mark" aria-hidden="true">MS</span>
         <span>Matías Sandoval</span>
       </a>
+
+      <div class="lang-switch" id="langSwitch">
+        <button class="lang-switch__toggle" type="button" id="langToggle" aria-haspopup="true"
+          aria-expanded="false" aria-controls="langMenu" aria-label="Cambiar idioma" title="Cambiar idioma">
+          <svg class="lang-switch__globe" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10" />
+            <path d="M2 12h20" />
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10Z" />
+          </svg>
+          <span class="lang-switch__current" id="langCurrent">ES</span>
+        </button>
+        <ul class="lang-switch__menu" id="langMenu" role="menu" aria-label="Idioma" hidden>
+          <li role="none"><button type="button" role="menuitemradio" aria-checked="true" data-lang="es"
+              lang="es">Español</button></li>
+          <li role="none"><button type="button" role="menuitemradio" aria-checked="false" data-lang="en"
+              lang="en">English</button></li>
+          <li role="none"><button type="button" role="menuitemradio" aria-checked="false" data-lang="pt"
+              lang="pt-BR">Português</button></li>
+        </ul>
+      </div>
 
       <button class="theme-toggle" type="button" id="themeToggle" aria-pressed="false"
         aria-label="Cambiar a modo claro" title="Cambiar tema">
@@ -141,7 +169,7 @@
             </a>
             <a class="btn btn--ghost" href="#contacto">Contacto</a>
             <a class="btn btn--ghost" href="assets/docs/Matias_Sandoval_CV.pdf" download="Matias_Sandoval_CV.pdf"
-              type="application/pdf">
+              type="application/pdf" data-cv-pdf>
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <path d="M12 3v12" />
@@ -520,7 +548,7 @@
           </article>
 
           <article class="card project reveal">
-            <h3>ProRoller</h3>
+            <h3>ProRoller <span class="badge">En desarrollo</span></h3>
             <p class="project__desc">
               Plataforma de contenido sobre patinaje: disciplinas, tutoriales, guías de seguridad y lugares
               donde patinar, con soporte multiidioma.
@@ -804,7 +832,8 @@
     </div>
   </footer>
 
-  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 
 </html>
