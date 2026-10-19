@@ -809,6 +809,22 @@ blockquote {
   color: var(--brand);
 }
 
+.reference {
+  max-width: 560px;
+}
+
+.reference .quote__author {
+  margin-top: 0;
+  color: var(--ink);
+}
+
+.reference__contact {
+  display: grid;
+  gap: 6px;
+  margin-top: 14px;
+  font-size: 0.95rem;
+}
+
 /* ---------- Contacto ---------- */
 
 .contact__grid {
