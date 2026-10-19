@@ -271,7 +271,7 @@ a {
 .certs {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2.5mm 6mm;
+  gap: 2mm 6mm;
   padding: 0;
   list-style: none;
 }
@@ -279,7 +279,7 @@ a {
 .certs li {
   display: flex;
   flex-direction: column;
-  padding: 2.5mm 3mm;
+  padding: 2mm 3mm;
   border: 1px solid var(--line);
   border-radius: 2mm;
   break-inside: avoid;
