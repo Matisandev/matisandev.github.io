@@ -1,26 +1,18 @@
 # matisandev.github.io
 
-Currículum y portfolio personal de Matías Sandoval, publicado con GitHub Pages en
-<https://matisandev.cl/> (dominio propio; también responde en <https://matisandev.github.io/>).
+Currículum y portfolio personal de Matías Sandoval, publicado en Vercel en
+<https://www.matisandev.cl/> (también en <https://matisandev.vercel.app/>).
 
-## Dominio propio (matisandev.cl)
+## Despliegue
 
-El canonical, los metadatos Open Graph / JSON-LD y el enlace «Portfolio» del PDF ya apuntan a
-`https://matisandev.cl/`. Para activar el dominio en GitHub Pages:
-
-1. En el DNS de `matisandev.cl`, crea registros `A` del apex hacia `185.199.108.153`,
-   `185.199.109.153`, `185.199.110.153` y `185.199.111.153`, y un `CNAME` de `www` hacia
-   `matisandev.github.io`.
-2. En *Settings → Pages* del repo, define `matisandev.cl` como custom domain (esto crea el
-   archivo `CNAME`) y activa *Enforce HTTPS* cuando el certificado esté listo.
-
-No agregues el archivo `CNAME` antes de que el DNS resuelva: GitHub redirigiría
-`matisandev.github.io` a un dominio que aún no responde.
+Vercel despliega automáticamente la rama `master`. El dominio `www.matisandev.cl` se gestiona
+en Vercel; el canonical, los metadatos Open Graph / JSON-LD y el enlace «Portfolio» del PDF
+apuntan a `https://www.matisandev.cl/`. No se usa archivo `CNAME` de GitHub Pages.
 
 ## Stack
 
 Sitio estático sin build ni dependencias: HTML, CSS y JavaScript vanilla. Se mantuvo esta
-arquitectura (en lugar de migrar a un framework) para que GitHub Pages siga sirviendo el sitio
+arquitectura (en lugar de migrar a un framework) para que Vercel siga sirviendo el sitio
 directamente desde la raíz de la rama `master` y las actualizaciones de contenido sean editar HTML.
 
 ```
