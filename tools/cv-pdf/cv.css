@@ -342,3 +342,17 @@ a {
   margin-top: 1mm;
   font-size: 9pt;
 }
+
+.status {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 0.5pt 6pt;
+  border: 0.75pt solid var(--brand);
+  border-radius: 999px;
+  color: var(--brand);
+  font-size: 6.5pt;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  vertical-align: middle;
+}

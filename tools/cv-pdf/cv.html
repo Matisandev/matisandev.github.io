@@ -17,6 +17,8 @@
   <!--
     Fuente del PDF descargable (assets/docs/Matias_Sandoval_CV.pdf).
     Mantener sincronizado con index.html y regenerar con: ./tools/cv-pdf/build.sh
+    Las versiones EN y PT se generan desde este mismo archivo con ?lang=en|pt usando las
+    traducciones de assets/js/i18n.js.
   -->
 
   <!-- ======= Encabezado ======= -->
@@ -353,7 +355,7 @@
     </div>
 
     <div class="project">
-      <h4>ProRoller</h4>
+      <h4>ProRoller <span class="status">En desarrollo</span></h4>
       <p>Plataforma de contenido sobre patinaje: disciplinas, tutoriales, guías de seguridad y lugares donde
         patinar, con soporte multiidioma.</p>
       <p class="tech"><span>Tecnologías:</span> Next.js, React, TypeScript.</p>
@@ -384,6 +386,20 @@
       </p>
     </div>
   </section>
+  <script src="../../assets/js/i18n.js"></script>
+  <script>
+    (function () {
+      var lang = SiteI18n.requestedLang() || "es";
+      if (lang === "es") return;
+      SiteI18n.apply(lang);
+      var pageLabel = { en: ["Page ", " of "], pt: ["Página ", " de "] }[lang];
+      var style = document.createElement("style");
+      style.textContent =
+        '@page { @bottom-left { content: "' + SiteI18n.t("Matías Sandoval — Currículum Vitae") + '"; } ' +
+        '@bottom-right { content: "' + pageLabel[0] + '" counter(page) "' + pageLabel[1] + '" counter(pages); } }';
+      document.head.appendChild(style);
+    })();
+  </script>
 </body>
 
 </html>
