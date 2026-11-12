@@ -492,6 +492,16 @@ blockquote {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
+.grid--projects {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+@media (max-width: 760px) {
+  .grid--projects {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* ---------- Sobre mí ---------- */
 
 .about {
