@@ -175,6 +175,8 @@
       "Resumo diário da política chilena baseado em fatos: notícias com contexto e fontes, mobilizações, bloqueios de trânsito, economia, autoridades e votações no Congresso, comparado com os quatro governos anteriores. É atualizado de forma automatizada e está disponível em espanhol, inglês e português."],
     ["Cada 2 horas", "Every 2 hours", "A cada 2 horas"],
     ["Ver sitio", "View site", "Ver site"],
+    ["Proyectos profesionales", "Professional projects", "Projetos profissionais"],
+    ["Proyectos personales", "Personal projects", "Projetos pessoais"],
     ["En desarrollo", "In development", "Em desenvolvimento"],
 
     // ---------- Formación ----------
