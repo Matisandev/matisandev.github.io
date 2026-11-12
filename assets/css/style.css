@@ -1122,3 +1122,34 @@ blockquote {
     display: none;
   }
 }
+
+/* Selector de idioma (mismo estilo que ProRoller y Kastigo) */
+.lang-select {
+  height: 36px;
+  padding: 0 12px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--surface-card);
+  color: var(--muted);
+  font: inherit;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: border-color 0.3s var(--ease), color 0.3s var(--ease);
+}
+.lang-select:hover,
+.lang-select:focus-visible {
+  border-color: var(--brand-border-strong);
+  color: var(--brand);
+}
+.lang-select option {
+  background: var(--navy);
+  color: var(--ink);
+  text-transform: none;
+}
+@media (max-width: 480px) {
+  .lang-select { height: 34px; padding: 0 8px; letter-spacing: 0.04em; font-size: 0.7rem; max-width: 118px; }
+  .brand span:last-child { white-space: nowrap; font-size: 0.95rem; }
+}
