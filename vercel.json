@@ -1,27 +1,67 @@
 {
   "rewrites": [
-    { "source": "/kastigo", "destination": "https://matisandev.github.io/kastigo/" },
-    { "source": "/kastigo/:path*", "destination": "https://matisandev.github.io/kastigo/:path*" }
+    {
+      "source": "/kastigo",
+      "destination": "https://matisandev.github.io/kastigo/"
+    },
+    {
+      "source": "/kastigo/:path*",
+      "destination": "https://matisandev.github.io/kastigo/:path*"
+    },
+    {
+      "source": "/proroller",
+      "destination": "https://pro-roller-six.vercel.app/proroller"
+    },
+    {
+      "source": "/proroller/:path*",
+      "destination": "https://pro-roller-six.vercel.app/proroller/:path*"
+    }
   ],
   "redirects": [
-    { "source": "/actualizacion-politica", "destination": "/kastigo", "permanent": true },
-    { "source": "/actualizacion-politica/:path*", "destination": "/kastigo", "permanent": true }
+    {
+      "source": "/actualizacion-politica",
+      "destination": "/kastigo",
+      "permanent": true
+    },
+    {
+      "source": "/actualizacion-politica/:path*",
+      "destination": "/kastigo",
+      "permanent": true
+    }
   ],
   "headers": [
     {
       "source": "/kastigo",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=0, s-maxage=300, stale-while-revalidate=600" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, s-maxage=300, stale-while-revalidate=600"
+        }
       ]
     },
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "X-Frame-Options", "value": "DENY" },
-        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
-        { "key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=()" },
-        { "key": "Strict-Transport-Security", "value": "max-age=63072000; includeSubDomains" }
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=()"
+        },
+        {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=63072000; includeSubDomains"
+        }
       ]
     }
   ]
