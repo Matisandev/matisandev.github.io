@@ -80,3 +80,5 @@ los enlaces, clicables.
 
 Para previsualizar el diseño sin regenerar, abre `tools/cv-pdf/cv.html` en Chrome y usa la vista de
 impresión (A4, márgenes predeterminados, sin encabezados ni pies del navegador).
+
+Contacto laboral: matiasandovalv@gmail.com
