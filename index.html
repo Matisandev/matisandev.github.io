@@ -76,24 +76,11 @@
       </a>
 
       <div class="lang-switch" id="langSwitch">
-        <button class="lang-switch__toggle" type="button" id="langToggle" aria-haspopup="true"
-          aria-expanded="false" aria-controls="langMenu" aria-label="Cambiar idioma" title="Cambiar idioma">
-          <svg class="lang-switch__globe" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <circle cx="12" cy="12" r="10" />
-            <path d="M2 12h20" />
-            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10Z" />
-          </svg>
-          <span class="lang-switch__current" id="langCurrent">ES</span>
-        </button>
-        <ul class="lang-switch__menu" id="langMenu" role="menu" aria-label="Idioma" hidden>
-          <li role="none"><button type="button" role="menuitemradio" aria-checked="true" data-lang="es"
-              lang="es">Español</button></li>
-          <li role="none"><button type="button" role="menuitemradio" aria-checked="false" data-lang="en"
-              lang="en">English</button></li>
-          <li role="none"><button type="button" role="menuitemradio" aria-checked="false" data-lang="pt"
-              lang="pt-BR">Português</button></li>
-        </ul>
+        <select class="lang-select" id="langSelect" name="locale" aria-label="Cambiar idioma" title="Cambiar idioma">
+          <option value="es" lang="es">ES · Español</option>
+          <option value="en" lang="en">EN · English</option>
+          <option value="pt" lang="pt-BR">PT · Português</option>
+        </select>
       </div>
 
       <button class="theme-toggle" type="button" id="themeToggle" aria-pressed="false"
