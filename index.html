@@ -695,11 +695,22 @@
         <p class="eyebrow">Contacto</p>
         <h2 class="section__title">Conversemos</h2>
         <p class="section__lead">
-          Puedes revisar mis proyectos y su código en GitHub.
+          Para oportunidades laborales, escríbeme a mi correo. También puedes revisar mis proyectos en GitHub.
         </p>
 
         <div class="card reveal">
           <div class="contact__grid">
+            <div class="contact__item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 4h16v16H4z" />
+                <path d="m4 6 8 6 8-6" />
+              </svg>
+              <div>
+                <h3>Email</h3>
+                <a id="contact-email" href="#contacto" data-u="matiasandovalv" data-d="gmail.com">matiasandovalv [arroba] gmail.com</a>
+              </div>
+            </div>
             <div class="contact__item">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                 <path
@@ -733,6 +744,15 @@
 
   <script src="assets/js/i18n.js"></script>
   <script src="assets/js/main.js"></script>
+  <script>
+    (function () {
+      var a = document.getElementById("contact-email");
+      if (!a) return;
+      var m = a.getAttribute("data-u") + "@" + a.getAttribute("data-d");
+      a.textContent = m;
+      a.setAttribute("href", "mailto:" + m);
+    })();
+  </script>
 </body>
 
 </html>
