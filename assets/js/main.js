@@ -5,9 +5,7 @@
   var toggle = document.getElementById("navToggle");
   var themeToggle = document.getElementById("themeToggle");
   var langSwitch = document.getElementById("langSwitch");
-  var langToggle = document.getElementById("langToggle");
-  var langMenu = document.getElementById("langMenu");
-  var langCurrent = document.getElementById("langCurrent");
+  var langSelect = document.getElementById("langSelect");
   var i18n = window.SiteI18n;
 
   function t(text) {
@@ -21,11 +19,6 @@
       "aria-label",
       t(theme === "light" ? "Cambiar a modo oscuro" : "Cambiar a modo claro")
     );
-  }
-
-  function closeLangMenu() {
-    langMenu.hidden = true;
-    langToggle.setAttribute("aria-expanded", "false");
   }
 
   function setLanguage(lang, persist) {
@@ -45,10 +38,7 @@
 
   document.addEventListener("site:languagechange", function (event) {
     var lang = event.detail.lang;
-    langCurrent.textContent = lang.toUpperCase();
-    langMenu.querySelectorAll("[data-lang]").forEach(function (option) {
-      option.setAttribute("aria-checked", option.getAttribute("data-lang") === lang ? "true" : "false");
-    });
+    langSelect.value = lang;
     applyTheme(document.documentElement.getAttribute("data-theme") === "light" ? "light" : "dark");
   });
 
@@ -63,23 +53,8 @@
     }
     setLanguage(i18n.langs.indexOf(initialLang) === -1 ? "es" : initialLang, false);
 
-    langToggle.addEventListener("click", function () {
-      var open = langMenu.hidden;
-      langMenu.hidden = !open;
-      langToggle.setAttribute("aria-expanded", open ? "true" : "false");
-      if (open) langMenu.querySelector('[aria-checked="true"]').focus();
-    });
-
-    langMenu.addEventListener("click", function (event) {
-      var option = event.target.closest("[data-lang]");
-      if (!option) return;
-      setLanguage(option.getAttribute("data-lang"), true);
-      closeLangMenu();
-      langToggle.focus();
-    });
-
-    document.addEventListener("click", function (event) {
-      if (!langSwitch.contains(event.target)) closeLangMenu();
+    langSelect.addEventListener("change", function () {
+      setLanguage(langSelect.value, true);
     });
   } else {
     langSwitch.hidden = true;
@@ -117,10 +92,6 @@
   document.addEventListener("keydown", function (event) {
     if (event.key === "Escape") {
       closeNav();
-      if (!langMenu.hidden) {
-        closeLangMenu();
-        langToggle.focus();
-      }
     }
   });
 
