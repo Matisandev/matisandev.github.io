@@ -1274,3 +1274,22 @@ blockquote {
   .brand span:last-child { font-size: 0.9rem; }
   .lang-select { max-width: 76px; padding: 0 6px; }
 }
+
+/* Grupos de proyectos (como los separadores de Kastigo) */
+.project-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 28px 0 14px;
+  font: 600 13px/1.4 var(--mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+.project-group:first-of-type { margin-top: 4px; }
+.project-group::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--line);
+}
