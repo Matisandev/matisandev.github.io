@@ -141,6 +141,23 @@ a {
   margin-top: 2mm;
 }
 
+.about-list {
+  margin-top: 1.5mm;
+  padding-left: 4.5mm;
+}
+
+.about-list li {
+  margin-top: 0.8mm;
+}
+
+.about-list li::marker {
+  color: var(--brand);
+}
+
+.about-list strong {
+  font-weight: 600;
+}
+
 .highlights {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -205,6 +222,22 @@ a {
 .edu,
 .project {
   margin-top: 3.5mm;
+}
+
+.edu,
+.project {
+  break-inside: avoid;
+}
+
+/* Los cargos largos pueden partirse entre páginas, pero sin dejar el título solo */
+.role__head,
+.role > .client,
+.role > .phase {
+  break-after: avoid;
+}
+
+.role li,
+.role > p {
   break-inside: avoid;
 }
 
@@ -228,6 +261,18 @@ a {
 
 .role li::marker {
   color: var(--brand);
+}
+
+.role > .client {
+  color: var(--brand);
+  font-size: 8.8pt;
+  font-weight: 600;
+}
+
+.role > .phase {
+  margin-top: 2mm;
+  font-size: 9pt;
+  font-weight: 600;
 }
 
 .tech {

@@ -354,6 +354,68 @@ blockquote {
   color: var(--ink);
 }
 
+/* ---------- Descarga del CV ---------- */
+
+.cv-download {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.cv-download__label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-right: 4px;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.cv-download__label svg {
+  color: var(--brand);
+}
+
+.cv-download__lang {
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--surface-sunken);
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s var(--ease), border-color 0.2s var(--ease), background 0.2s var(--ease);
+}
+
+.cv-download__lang:hover,
+.cv-download__lang:focus-visible {
+  color: var(--brand);
+  border-color: var(--brand-border-strong);
+}
+
+.cv-download__lang.is-current {
+  color: var(--brand-ink);
+  background: var(--brand);
+  border-color: var(--brand);
+}
+
+.cv-download__lang.is-current:hover,
+.cv-download__lang.is-current:focus-visible {
+  color: var(--brand-ink);
+  background: var(--brand-strong);
+}
+
+#contacto .cv-download {
+  margin-top: 24px;
+}
+
+.hero .cv-download {
+  margin-bottom: 20px;
+}
+
 /* ---------- Hero ---------- */
 
 .hero {
@@ -511,6 +573,25 @@ blockquote {
   align-items: start;
 }
 
+.about__list {
+  list-style: disc;
+  margin: 0 0 1em;
+  padding-left: 20px;
+}
+
+.about__list li {
+  margin-bottom: 8px;
+}
+
+.about__list li::marker {
+  color: var(--brand);
+}
+
+.about__list strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+
 .about p:last-child {
   margin-bottom: 0;
 }
@@ -622,6 +703,47 @@ blockquote {
   color: var(--muted);
   font-size: 0.95rem;
   margin: 8px 0 0;
+}
+
+.timeline__client {
+  margin: 6px 0 0;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--brand);
+}
+
+.timeline__phase {
+  margin: 16px 0 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.timeline__list {
+  list-style: disc;
+  margin: 8px 0 0;
+  padding-left: 18px;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.timeline__list li {
+  margin-bottom: 4px;
+  padding-left: 2px;
+}
+
+.timeline__list li::marker {
+  color: var(--brand);
+}
+
+.timeline__skills {
+  margin-top: 14px;
+  gap: 6px;
+}
+
+.timeline__skills .chip {
+  padding: 3px 11px;
+  font-size: 0.78rem;
 }
 
 .badge {
@@ -1133,7 +1255,7 @@ blockquote {
   }
 }
 
-/* Selector de idioma (mismo estilo que ProRoller y Kastigo) */
+/* Selector de idioma */
 .lang-select {
   height: 36px;
   padding: 0 12px;
@@ -1165,7 +1287,7 @@ blockquote {
 }
 
 /* ==========================================================================
-   Misma línea visual que Kastigo (matisandev.cl/kastigo) y ProRoller
+   Ajustes finales: tipografía monoespaciada en etiquetas y header compacto
    ========================================================================== */
 :root {
   --header-h: 64px;
@@ -1275,21 +1397,3 @@ blockquote {
   .lang-select { max-width: 76px; padding: 0 6px; }
 }
 
-/* Grupos de proyectos (como los separadores de Kastigo) */
-.project-group {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin: 28px 0 14px;
-  font: 600 13px/1.4 var(--mono);
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--ink);
-}
-.project-group:first-of-type { margin-top: 4px; }
-.project-group::after {
-  content: "";
-  flex: 1;
-  height: 1px;
-  background: var(--line);
-}

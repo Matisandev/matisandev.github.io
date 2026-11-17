@@ -39,6 +39,13 @@
   document.addEventListener("site:languagechange", function (event) {
     var lang = event.detail.lang;
     langSelect.value = lang;
+    /* Destaca el CV en el idioma activo del sitio */
+    Array.prototype.forEach.call(document.querySelectorAll(".cv-download__lang"), function (link) {
+      var match = link.getAttribute("hreflang").slice(0, 2) === lang;
+      link.classList.toggle("is-current", match);
+      if (match) link.setAttribute("aria-current", "true");
+      else link.removeAttribute("aria-current");
+    });
     applyTheme(document.documentElement.getAttribute("data-theme") === "light" ? "light" : "dark");
   });
 

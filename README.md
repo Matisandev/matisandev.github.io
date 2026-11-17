@@ -51,6 +51,10 @@ correspondiente en `assets/js/i18n.js` (si no, ese texto aparecerá en español 
 
 ## CV en PDF
 
+El sitio ofrece el CV en los tres idiomas desde el hero y la sección de contacto (bloque «Descargar CV»);
+el idioma activo del sitio queda destacado. El teléfono aparece solo en el PDF, no en el sitio.
+`vercel.json` redirige `/tools` a la portada para que la fuente del PDF no se publique como página.
+
 El botón «Descargar CV en PDF» apunta a un archivo estático según el idioma elegido:
 `assets/docs/Matias_Sandoval_CV.pdf` (ES), `Matias_Sandoval_CV_EN.pdf` y `Matias_Sandoval_CV_PT.pdf`,
 que se versionan en el repositorio. El sitio publicado no genera nada en tiempo de ejecución.

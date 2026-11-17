@@ -1,44 +1,17 @@
 {
-  "rewrites": [
-    {
-      "source": "/kastigo",
-      "destination": "https://matisandev.github.io/kastigo/"
-    },
-    {
-      "source": "/kastigo/:path*",
-      "destination": "https://matisandev.github.io/kastigo/:path*"
-    },
-    {
-      "source": "/proroller",
-      "destination": "https://pro-roller-six.vercel.app/proroller"
-    },
-    {
-      "source": "/proroller/:path*",
-      "destination": "https://pro-roller-six.vercel.app/proroller/:path*"
-    }
-  ],
   "redirects": [
     {
-      "source": "/actualizacion-politica",
-      "destination": "/kastigo",
-      "permanent": true
+      "source": "/tools",
+      "destination": "/",
+      "permanent": false
     },
     {
-      "source": "/actualizacion-politica/:path*",
-      "destination": "/kastigo",
-      "permanent": true
+      "source": "/tools/:path*",
+      "destination": "/",
+      "permanent": false
     }
   ],
   "headers": [
-    {
-      "source": "/kastigo",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, s-maxage=300, stale-while-revalidate=600"
-        }
-      ]
-    },
     {
       "source": "/(.*)",
       "headers": [
